@@ -1,5 +1,37 @@
 # cloudxlab_assignment-02
 
+## Exercise 4.1: Min Max
+
+---
+
+## Exercise 4.2: Min Max Normalize
+
+---
+
+## Exercise 4.3: Mean
+
+---
+
+## Exercise 4.4: Standard Deviation
+
+---
+
+## Exercise 4.5: Ouliers
+
+---
+
+## Exercise 4.6: IQR
+
+---
+
+## Exercise 4.7: Standardization
+
+---
+
+## Exercise 4.8: RMSE
+
+---
+
 ## Exercise 4.9: Mean Absolute Error
 
 Result does not match the notes.
@@ -55,3 +87,13 @@ The result from my script while calculating $3^{rd}$ point is different from the
 ## Exercise 4.18: Multiply polynomials
 
 ---
+
+## Exercise 4.19: Solve for First variable
+
+---
+
+## Exercise 4.20: Eliminate one variable from 2 equations
+
+---
+
+## Exercise 4.21: Eliminate one variable linear equations
