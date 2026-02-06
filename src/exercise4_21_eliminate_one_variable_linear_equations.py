@@ -1,7 +1,9 @@
 import exercise3_5_hcf as hcf
 
-def eliminate_variable(eq1, eq2, var_index):
+def eliminate_variable(equations:list[list], var_index) -> list:
     ret = []
+    eq1 = equations[0]
+    eq2 = equations[1]
     if var_index >= len(eq1)-1:
         print(f"Error: Cannot solve for variable at location {var_index} because it is out of range")
     elif var_index >= len(eq2)-1:
@@ -32,18 +34,16 @@ def eliminate_variable(eq1, eq2, var_index):
 
 def main():
     print("\n*** Eliminate a one variable and returns final equation ***")
-    eq1 = [2, 3, 8]
-    eq2 = [4, -1, 2]
+    equations = [[2, 3, 5], [1, -1, 10]]
     index_to_eliminate = 0
-    print(f"\nEliminate variable at index {index_to_eliminate} from equations {eq1} and {eq2}")
-    a_list = eliminate_variable(eq1, eq2, index_to_eliminate)
+    print(f"\nEliminate variable at index {index_to_eliminate} from equations {equations[0]} and {equations[1]}")
+    a_list = eliminate_variable(equations, index_to_eliminate)
     print(f"Result: {a_list}")
 
-    eq1 = [1, 2, 3]
-    eq2 = [3, 1, 7]
+    equations = [[1, 1, 4], [2, -1, 1]]
     index_to_eliminate = 1
-    print(f"\nEliminate variable at index {index_to_eliminate} from equations {eq1} and {eq2}")
-    a_list = eliminate_variable(eq1, eq2, index_to_eliminate)
+    print(f"\nEliminate variable at index {index_to_eliminate} from equations {equations[0]} and {equations[1]}")
+    a_list = eliminate_variable(equations, index_to_eliminate)
     print(f"Result: {a_list}")
 
 if __name__ == "__main__":
