@@ -97,3 +97,9 @@ The result from my script while calculating $3^{rd}$ point is different from the
 ---
 
 ## Exercise 4.21: Eliminate one variable linear equations
+
+---
+
+## Exercise 4.22: Linear Equations Recursively
+
+$$ a_1x_1 + a_2x_2 + \dots + a_nx_n = b $$

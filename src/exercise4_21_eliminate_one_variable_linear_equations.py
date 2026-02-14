@@ -1,9 +1,9 @@
 import exercise3_5_hcf as hcf
 
-def eliminate_variable(equations:list[list], var_index) -> list:
+def eliminate_variable(equations:list[list], var_index:int) -> list:
     ret = []
-    eq1 = equations[0]
-    eq2 = equations[1]
+    eq1 = equations[0].copy()
+    eq2 = equations[1].copy()
     if var_index >= len(eq1)-1:
         print(f"Error: Cannot solve for variable at location {var_index} because it is out of range")
     elif var_index >= len(eq2)-1:
