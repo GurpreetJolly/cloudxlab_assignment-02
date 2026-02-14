@@ -1,7 +1,9 @@
 import exercise3_5_hcf as hcf
 
-def eliminate_variable(eq1, eq2, var_index):
+def eliminate_variable(an_eq1, an_eq2, var_index):
     ret = []
+    eq1 = an_eq1.copy()
+    eq2 = an_eq2.copy()
     if var_index >= len(eq1)-1:
         print(f"Error: Cannot solve for variable at location {var_index} because it is out of range")
     elif var_index >= len(eq2)-1:
@@ -24,10 +26,11 @@ def eliminate_variable(eq1, eq2, var_index):
         ret.remove(0)
         #If there is possibility of reducing coefficient the find HCF and divide by HCF
         ret_hcf = abs(ret[0])
-        for i in range(len(ret)):
-            ret_hcf = hcf.compute_hcf(ret_hcf, abs(ret[i]))
-        for i in range(len(ret)):
-            ret[i] //= ret_hcf
+        if ret_hcf > 0:
+            for i in range(len(ret)):
+                ret_hcf = hcf.compute_hcf(ret_hcf, abs(ret[i]))
+            for i in range(len(ret)):
+                ret[i] //= ret_hcf
     return ret
 
 def main():
