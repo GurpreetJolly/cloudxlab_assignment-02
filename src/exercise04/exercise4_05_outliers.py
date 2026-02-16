@@ -1,5 +1,5 @@
-import exercise4_3_compute_mean as compute_mean_module
-import exercise4_4_compute_standard_deviation as compute_sd_module
+import exercise04.exercise4_03_compute_mean as compute_mean_module
+import exercise04.exercise4_04_compute_standard_deviation as compute_sd_module
 
 def find_outliers(nums: list, threshold: float) -> list:
     mean = compute_mean_module.compute_mean(nums)

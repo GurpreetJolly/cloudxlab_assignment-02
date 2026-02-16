@@ -1,5 +1,5 @@
-from exercise4_3_compute_mean import compute_mean
-from exercise4_4_compute_standard_deviation import compute_sd
+from exercise04.exercise4_03_compute_mean import compute_mean
+from exercise04.exercise4_04_compute_standard_deviation import compute_sd
 
 def standardization(data):
     if not data:
