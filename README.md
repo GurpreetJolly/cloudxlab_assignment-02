@@ -103,3 +103,59 @@ The result from my script while calculating $3^{rd}$ point is different from the
 ## Exercise 4.22: Linear Equations Recursively
 
 $$ a_1x_1 + a_2x_2 + \dots + a_nx_n = b $$
+
+---
+
+## Exercise 4.23: Fair Coin Toss
+
+---
+
+## Exercise 4.24: Biased Coin Toss
+
+---
+
+## Exercise 4.25: Biased Coin Toss With Probablity Parameter
+
+---
+
+## Exercise 4.26: Weighted Choices
+
+--
+
+## Exercise 4.27: Normalize a List into Probabilities
+
+---
+
+## Exercise 4.28: Softmax Function
+
+---
+
+## Exercise 4.29: Softmax Function with Numerical Stability
+
+---
+
+## Exercise 4.30: Softmax Function with Temperature Scaling
+
+Function:
+
+$$ softmax(x_i,T) = \frac{e^{x_i/T}}{\displaystyle\sum_{j=1}^n{e^{x_j/T}}} $$
+
+The answer in problem statement with T=2 and the app is different.
+
+**Problem statement:** $ softmax([1,2,3], 2.0) = [0.21, 0.31, 0.48] $
+
+**Application:** $ softmax([1,2,3], 2.0) = [0.91, 0.31, 0.51] $
+
+---
+
+## Exercise 4.31: Weighted Choices with Temperature
+
+Need to understand the return value.
+
+## Exercise 4.32: Flatten List
+
+---
+
+## Exersise 4.33: Solve Expression
+
+---
