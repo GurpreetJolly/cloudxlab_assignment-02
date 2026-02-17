@@ -1,11 +1,11 @@
-import exercise4_1_min_max 
+import exercise04.exercise4_01_min_max as exercise4_01_min_max 
 
 def min_max_normalize(value, data) -> float:
     if not data:
         raise ValueError("The data list cannot be empty")
 
     # Use previously defined function to find min and max
-    min_value, max_value = exercise4_1_min_max.find_min_max(data)
+    min_value, max_value = exercise4_01_min_max.find_min_max(data)
 
     if max_value == min_value:
         raise ValueError("All values in the data list are the same; normalization is not possible.")

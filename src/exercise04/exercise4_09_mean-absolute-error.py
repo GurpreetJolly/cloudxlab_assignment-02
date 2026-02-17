@@ -1,4 +1,4 @@
-from exercise4_3_compute_mean import compute_mean
+from exercise04.exercise4_03_compute_mean import compute_mean
 
 def compute_mae_2d(actual, predicted) -> float:
     absolute_errors = []

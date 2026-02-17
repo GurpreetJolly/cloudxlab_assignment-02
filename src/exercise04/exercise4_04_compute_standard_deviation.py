@@ -1,5 +1,5 @@
 import math
-import exercise4_3_compute_mean as compute_mean_module
+import exercise04.exercise4_03_compute_mean as compute_mean_module
 
 def compute_sd(numbers) -> float:
     mean = compute_mean_module.compute_mean(numbers)
